@@ -69,10 +69,6 @@ int main() {
 
 - Skills system to apply predefined prompts or transformations to text such as simplification, summarization, etc.
 
-## Getting Started
-
-[... Existing 'Getting Started' content ...]
-
 ## Skills System
 
 The Skills system is designed to apply specific transformations to a given text. These transformations are defined as "skills" and each skill is associated with a prompt that describes the action to be taken on the text.

@@ -65,6 +65,36 @@ int main() {
 }
 ```
 
+## New Features
+
+- Skills system to apply predefined prompts or transformations to text such as simplification, summarization, etc.
+
+## Getting Started
+
+[... Existing 'Getting Started' content ...]
+
+## Skills System
+
+The Skills system is designed to apply specific transformations to a given text. These transformations are defined as "skills" and each skill is associated with a prompt that describes the action to be taken on the text.
+
+### How to Use Skills
+
+Here's an example of how to use the skills system:
+
+```cpp
+#include "Skills.hpp"
+#include <iostream>
+
+int main() {
+    Skill skillSet;
+    std::string textToSimplify = "Este es un ejemplo de texto que será simplificado.";
+    std::string simplifiedText = skillSet.applySkill("simplificar", textToSimplify);
+    
+    std::cout << simplifiedText << std::endl;
+    
+    return 0;
+}
+
 ## Contributing
 
 We welcome contributions to AIBookEngine! If you have suggestions or improvements, please fork the repository and create a pull request, or open an issue with the tag "enhancement".

@@ -6,6 +6,7 @@
 #include <cctype>
 #include <sstream>
 #include "text_utils.hpp"
+#include "skills.hpp"
 
 // Utilizamos la biblioteca nlohmann/json para manejar JSON de forma sencilla.
 using json = nlohmann::json;
@@ -56,7 +57,7 @@ size_t writeCallback(void* contents, size_t size, size_t nmemb, void* userp) {
 void setupCurl(CURL* curl, const string& jsonBody) {
     struct curl_slist* headers = nullptr;
     headers = curl_slist_append(headers, "Content-Type: application/json");
-    curl_easy_setopt(curl, CURLOPT_URL, "http://192.168.100.100:11434/api/generate");
+    curl_easy_setopt(curl, CURLOPT_URL, "http://localhost:11434/api/generate");
     curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
     curl_easy_setopt(curl, CURLOPT_POST, 1L);
     // Establece el cuerpo de la solicitud con el JSON generado.
@@ -118,7 +119,9 @@ void processAIRequest(const string& filename) {
             std::cout << token << std::endl;
         }
         
-        string prompt = "Dado el libro que describo a continuación: " + trimAndReduce(description) + "... por favor extrae la idea principal del mismo para generar un embedding eficiente con un modelo de inteligencia artificial. No agregues absolutamente nada ni antes ni después del texto que vas a generar, solamente expresa la idea principal sin agregado alguno.";
+//        string prompt = "Dado el libro que describo a continuación: " + trimAndReduce(description) + "... por favor extrae la idea principal del mismo para generar un embedding eficiente con un modelo de inteligencia artificial. No agregues absolutamente nada ni antes ni después del texto que vas a generar, solamente expresa la idea principal sin agregado alguno.";
+        
+        string prompt = "Dado el libro que describo a continuación: " + trimAndReduce(description) + "... por favor extrae las palabras clave separads por coma. No agregues absolutamente nada ni antes ni después del texto que vas a generar, solamente expresa la idea principal sin agregado alguno.";
         
         cout << endl << "__________" << endl << prompt << endl << "__________" << endl;
         
@@ -138,9 +141,17 @@ void processAIRequest(const string& filename) {
 }
 
 int main() {
-    // Define la ruta al archivo que se va a procesar.
-    const string filename = "/Users/armandomeabe/Code/FICH/Proyectos/Prueba001/AIBookEngine/AIBookEngine/sample_prompt";
-    // Procesa la solicitud a la API utilizando el contenido del archivo.
-    processAIRequest(filename);
+//    // Define la ruta al archivo que se va a procesar.
+//    const string filename = "/Users/armandomeabe/Code/AIBookEngine/AIBookEngine/sample_prompt";
+//    // Procesa la solicitud a la API utilizando el contenido del archivo.
+//    processAIRequest(filename);
+    
+    
+    Skill skillSet;
+    std::string textToSimplify = "Este es un prompt de texto que será simplificado.";
+    std::string simplifiedText = skillSet.applySkill("simplify", textToSimplify);
+    
+    std::cout << simplifiedText << std::endl;
+    
     return 0;
 }

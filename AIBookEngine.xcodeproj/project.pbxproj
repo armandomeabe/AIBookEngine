@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25413EF42BD8AE540072C6BE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25413EF32BD8AE540072C6BE /* main.cpp */; };
+		254B99CB2BE586AD00BFADF4 /* Skills.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 254B99C92BE586AD00BFADF4 /* Skills.cpp */; };
 		25797E9E2BDCB6A8001720FA /* text_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25797E9D2BDCB6A8001720FA /* text_utils.cpp */; };
 		25C44C352BDB4A0F00F752DA /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C44C342BDB4A0F00F752DA /* libcurl.tbd */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		25413EF02BD8AE540072C6BE /* AIBookEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AIBookEngine; sourceTree = BUILT_PRODUCTS_DIR; };
 		25413EF32BD8AE540072C6BE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		254B99C92BE586AD00BFADF4 /* Skills.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Skills.cpp; sourceTree = "<group>"; };
+		254B99CA2BE586AD00BFADF4 /* Skills.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Skills.hpp; sourceTree = "<group>"; };
 		25797E9C2BDCB675001720FA /* text_utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = text_utils.hpp; sourceTree = "<group>"; };
 		25797E9D2BDCB6A8001720FA /* text_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = text_utils.cpp; sourceTree = "<group>"; };
 		2594DD1D2BDC36F800591D88 /* sample_prompt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_prompt; sourceTree = "<group>"; };
@@ -65,12 +68,22 @@
 		25413EF22BD8AE540072C6BE /* AIBookEngine */ = {
 			isa = PBXGroup;
 			children = (
+				254B99C82BE5868400BFADF4 /* AI */,
 				2594DD1D2BDC36F800591D88 /* sample_prompt */,
 				25413EF32BD8AE540072C6BE /* main.cpp */,
 				25797E9C2BDCB675001720FA /* text_utils.hpp */,
 				25797E9D2BDCB6A8001720FA /* text_utils.cpp */,
 			);
 			path = AIBookEngine;
+			sourceTree = "<group>";
+		};
+		254B99C82BE5868400BFADF4 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				254B99C92BE586AD00BFADF4 /* Skills.cpp */,
+				254B99CA2BE586AD00BFADF4 /* Skills.hpp */,
+			);
+			path = AI;
 			sourceTree = "<group>";
 		};
 		25C44C332BDB4A0F00F752DA /* Frameworks */ = {
@@ -140,6 +153,7 @@
 			files = (
 				25797E9E2BDCB6A8001720FA /* text_utils.cpp in Sources */,
 				25413EF42BD8AE540072C6BE /* main.cpp in Sources */,
+				254B99CB2BE586AD00BFADF4 /* Skills.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

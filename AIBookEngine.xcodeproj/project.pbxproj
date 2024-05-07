@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250613EE2BEAAC4E00FBD335 /* AIClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 250613EC2BEAAC4E00FBD335 /* AIClient.cpp */; };
 		25413EF42BD8AE540072C6BE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25413EF32BD8AE540072C6BE /* main.cpp */; };
 		254B99CB2BE586AD00BFADF4 /* Skills.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 254B99C92BE586AD00BFADF4 /* Skills.cpp */; };
+		255B222D2BE9EAB0003A3DBB /* CurlHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 255B222B2BE9EAB0003A3DBB /* CurlHelper.cpp */; };
 		25797E9E2BDCB6A8001720FA /* text_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25797E9D2BDCB6A8001720FA /* text_utils.cpp */; };
 		25C44C352BDB4A0F00F752DA /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C44C342BDB4A0F00F752DA /* libcurl.tbd */; };
 /* End PBXBuildFile section */
@@ -26,10 +28,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		250613EC2BEAAC4E00FBD335 /* AIClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AIClient.cpp; sourceTree = "<group>"; };
+		250613ED2BEAAC4E00FBD335 /* AIClient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AIClient.hpp; sourceTree = "<group>"; };
 		25413EF02BD8AE540072C6BE /* AIBookEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AIBookEngine; sourceTree = BUILT_PRODUCTS_DIR; };
 		25413EF32BD8AE540072C6BE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		254B99C92BE586AD00BFADF4 /* Skills.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Skills.cpp; sourceTree = "<group>"; };
 		254B99CA2BE586AD00BFADF4 /* Skills.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Skills.hpp; sourceTree = "<group>"; };
+		255B222B2BE9EAB0003A3DBB /* CurlHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CurlHelper.cpp; sourceTree = "<group>"; };
+		255B222C2BE9EAB0003A3DBB /* CurlHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CurlHelper.hpp; sourceTree = "<group>"; };
 		25797E9C2BDCB675001720FA /* text_utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = text_utils.hpp; sourceTree = "<group>"; };
 		25797E9D2BDCB6A8001720FA /* text_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = text_utils.cpp; sourceTree = "<group>"; };
 		2594DD1D2BDC36F800591D88 /* sample_prompt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample_prompt; sourceTree = "<group>"; };
@@ -82,6 +88,10 @@
 			children = (
 				254B99C92BE586AD00BFADF4 /* Skills.cpp */,
 				254B99CA2BE586AD00BFADF4 /* Skills.hpp */,
+				255B222B2BE9EAB0003A3DBB /* CurlHelper.cpp */,
+				255B222C2BE9EAB0003A3DBB /* CurlHelper.hpp */,
+				250613EC2BEAAC4E00FBD335 /* AIClient.cpp */,
+				250613ED2BEAAC4E00FBD335 /* AIClient.hpp */,
 			);
 			path = AI;
 			sourceTree = "<group>";
@@ -152,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				25797E9E2BDCB6A8001720FA /* text_utils.cpp in Sources */,
+				250613EE2BEAAC4E00FBD335 /* AIClient.cpp in Sources */,
+				255B222D2BE9EAB0003A3DBB /* CurlHelper.cpp in Sources */,
 				25413EF42BD8AE540072C6BE /* main.cpp in Sources */,
 				254B99CB2BE586AD00BFADF4 /* Skills.cpp in Sources */,
 			);

@@ -13,15 +13,16 @@
 
 #include "CurlHelper.hpp"
 #include "text_utils.hpp"
-#include "skills.hpp"
+#include "Skills.hpp"
+#include "Embedding.hpp"
 
 class AIClient {
 private:
     
 public:
     AIClient();
-    std::string Chat(const std::string& text);
-    std::string Embed(const std::string& text);
+    std::string Generate(const std::string& text);
+    Embedding Embed(const std::string& text);
 };
 
 #endif /* AIClient_hpp */

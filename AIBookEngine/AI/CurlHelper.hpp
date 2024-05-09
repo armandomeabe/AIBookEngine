@@ -15,7 +15,7 @@
 
 using namespace std;
 
-// Utilizamos la biblioteca nlohmann/json para manejar JSON de forma sencilla.
+// usar la biblioteca nlohmann/json para manejar JSON de forma facil.
 using json = nlohmann::json;
 
 class CurlHelper {
@@ -25,14 +25,20 @@ public:
     ~CurlHelper();
 
     // Método para configurar y realizar la solicitud HTTP POST.
-    std::string setupCurl(const string& jsonBody);
+    std::string setupCurl(const string& jsonBody, const string& endpoint, bool stream);
 
     // Método para crear el cuerpo de la solicitud JSON.
-    std::string createJsonBody(const std::string& model, const std::string& prompt);
+    std::string createChatJsonBody(const std::string& model, const std::string& prompt);
+
+    // Método para crear el cuerpo de la solicitud JSON para usar con modelos de embeddings solamente
+    std::string createEmbeddingJsonBody(const std::string& model, const std::string& prompt);
 
 private:
     // Función de callback para escribir los datos recibidos.
     static size_t writeCallback(void* contents, size_t size, size_t nmemb, void* userp);
+    
+    // Lo mismo pero sin streaming
+    static size_t writeCallbackNoStream(void* contents, size_t size, size_t nmemb, void* userp);
 };
 
 #endif /* CurlHelper_hpp */

@@ -1,0 +1,6 @@
+@Cognitiva.AIBookEngine.API_HostAddress = http://localhost:5120
+
+GET {{Cognitiva.AIBookEngine.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

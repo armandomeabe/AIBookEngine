@@ -16,6 +16,7 @@ public:
     static std::string processText(const std::string& input);
     static std::string stringifyTokens(const std::vector<std::string>& tokens);
     static std::string readFileContents(const std::string& filename);
+    static std::vector<std::string> splitString(const std::string& str);
 };
 
 #endif // TEXT_UTILS_HPP

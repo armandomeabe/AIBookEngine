@@ -1,0 +1,1 @@
+Este libro es un compendio de cuanto se precisa conocer y aplicar para diseñar los procesos de producción, con todos loselementos que requieran las operaciones que los conforman (materiales, máquinas, instalaciones, elementos de transporte?),para luego desarrollarlos al detalle y, finalmente, implementarlos en una planta dispuesta al efecto.

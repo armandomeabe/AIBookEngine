@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		250613EE2BEAAC4E00FBD335 /* AIClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 250613EC2BEAAC4E00FBD335 /* AIClient.cpp */; };
+		253385E02BEDBB7B0050D1E2 /* TextElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 253385DE2BEDBB7B0050D1E2 /* TextElement.cpp */; };
 		25413EF42BD8AE540072C6BE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25413EF32BD8AE540072C6BE /* main.cpp */; };
 		254B99CB2BE586AD00BFADF4 /* Skills.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 254B99C92BE586AD00BFADF4 /* Skills.cpp */; };
 		255B222D2BE9EAB0003A3DBB /* CurlHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 255B222B2BE9EAB0003A3DBB /* CurlHelper.cpp */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		250613EC2BEAAC4E00FBD335 /* AIClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AIClient.cpp; sourceTree = "<group>"; };
 		250613ED2BEAAC4E00FBD335 /* AIClient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AIClient.hpp; sourceTree = "<group>"; };
+		253385DE2BEDBB7B0050D1E2 /* TextElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextElement.cpp; sourceTree = "<group>"; };
+		253385DF2BEDBB7B0050D1E2 /* TextElement.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextElement.hpp; sourceTree = "<group>"; };
 		25413EF02BD8AE540072C6BE /* AIBookEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AIBookEngine; sourceTree = BUILT_PRODUCTS_DIR; };
 		25413EF32BD8AE540072C6BE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		254B99C92BE586AD00BFADF4 /* Skills.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Skills.cpp; sourceTree = "<group>"; };
@@ -57,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		253385DD2BEDBAC20050D1E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				253385DE2BEDBB7B0050D1E2 /* TextElement.cpp */,
+				253385DF2BEDBB7B0050D1E2 /* TextElement.hpp */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		25413EE72BD8AE540072C6BE = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +89,10 @@
 		25413EF22BD8AE540072C6BE /* AIBookEngine */ = {
 			isa = PBXGroup;
 			children = (
+				253385DD2BEDBAC20050D1E2 /* Models */,
+				254C4CB12BED4BB4004A5B8F /* KB */,
 				256A096F2BEB309100C70A94 /* Text */,
 				254B99C82BE5868400BFADF4 /* AI */,
-				2594DD1D2BDC36F800591D88 /* sample_prompt */,
 				25413EF32BD8AE540072C6BE /* main.cpp */,
 			);
 			path = AIBookEngine;
@@ -98,6 +111,14 @@
 				256A096D2BEB2EBB00C70A94 /* Embedding.hpp */,
 			);
 			path = AI;
+			sourceTree = "<group>";
+		};
+		254C4CB12BED4BB4004A5B8F /* KB */ = {
+			isa = PBXGroup;
+			children = (
+				2594DD1D2BDC36F800591D88 /* sample_prompt */,
+			);
+			path = KB;
 			sourceTree = "<group>";
 		};
 		256A096F2BEB309100C70A94 /* Text */ = {
@@ -179,6 +200,7 @@
 				255B222D2BE9EAB0003A3DBB /* CurlHelper.cpp in Sources */,
 				25413EF42BD8AE540072C6BE /* main.cpp in Sources */,
 				254B99CB2BE586AD00BFADF4 /* Skills.cpp in Sources */,
+				253385E02BEDBB7B0050D1E2 /* TextElement.cpp in Sources */,
 				256A096E2BEB2EBB00C70A94 /* Embedding.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

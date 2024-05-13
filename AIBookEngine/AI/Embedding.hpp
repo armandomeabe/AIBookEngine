@@ -16,6 +16,7 @@
 
 class Embedding {
 public:
+    static const std::size_t NUM_DIMENSIONS = 768;
     std::vector<float> embedding;
     std::string originalText;
 

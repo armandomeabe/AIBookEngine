@@ -1,0 +1,1 @@
+Este no es un libro: es varios libros a la vez, distinto en cada vuelta (y despliegue) de cada una de sus páginas. Y en cada página, una historia.

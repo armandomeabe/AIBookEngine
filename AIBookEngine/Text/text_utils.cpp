@@ -169,3 +169,15 @@ std::string TextUtils::processText(const std::string& input) {
     
     return stringify;
 }
+
+std::vector<std::string> TextUtils::splitString(const std::string& str) {
+    std::vector<std::string> words;
+    std::stringstream ss(str);
+    std::string word;
+
+    while (std::getline(ss, word, ',')) {
+        words.push_back(word);
+    }
+
+    return words;
+}

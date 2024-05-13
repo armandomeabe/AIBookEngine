@@ -1,0 +1,1 @@
+The Online Workbook is an interactive version of the Print Workbook. It  provides students with the ability to learn on different devices (PCs,  tablets, mobiles phones). The Student Gradebook is an automatic scoring  feature providing instant feedback and allows results to be monitored by the  student and teacher.

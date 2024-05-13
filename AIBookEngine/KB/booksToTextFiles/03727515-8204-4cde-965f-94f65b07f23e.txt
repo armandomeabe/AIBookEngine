@@ -1,0 +1,1 @@
+Esta obra se basa en el reconocido método de ?código activo?, donde los  conceptos se presentan en un contexto de programas funcionales completos, en  el que se aprovechan los conceptos y el código, y la experiencia es  semejante a la que se tendrá en el desarrollo profesional.

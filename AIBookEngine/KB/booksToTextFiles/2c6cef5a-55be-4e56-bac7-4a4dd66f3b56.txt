@@ -1,0 +1,1 @@
+Esta obra presenta los conceptos fundamentales de las matemáticas discretas  con múltiples ejemplos y ejercicios resueltos, lo que resulta valioso dada  la naturaleza de la asignatura. Puede utilizarse también en maestrías de  computación, pues además de incluir los conceptos fundamentales de la  matemática discreta, contiene otros para estudios avanzados.

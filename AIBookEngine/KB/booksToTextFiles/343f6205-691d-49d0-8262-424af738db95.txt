@@ -1,0 +1,1 @@
+Esta obra esta principalmente dirigida a los estudiantes de ingeniería  electrónica. Se ha puesto especial énfasis en los fenómenos que involucran  transmisión de la energía electromagnética, ya sea guiada o por radiación.  El tratamiento es en esencia conceptual, orientado más hacia la descripción  de los fenómenos que a sus aplicaciones prácticas.

@@ -17,7 +17,8 @@ std::string AIClient::Generate(const std::string &text) {
     auto sanitizedDescription = TextUtils::processText(text);
 
     auto skillSet = new Skill(); //heap: just for fun.
-    std::string prompt = skillSet->applySkill("extractKeywords", sanitizedDescription);
+    // std::string prompt = skillSet->applySkill("extractKeywords", sanitizedDescription);
+    std::string prompt = skillSet->applySkill("extractTLDR", sanitizedDescription);
     
     // Instancia de la clase CurlHelper
     CurlHelper curlHelper;
@@ -27,7 +28,8 @@ std::string AIClient::Generate(const std::string &text) {
     
     // Configura CURL con las opciones necesarias y realiza la solicitud.
     string serverResponse = curlHelper.setupCurl(jsonBody, "http://localhost:11434/api/generate", true); // Almacenamos la respuesta del servidor.
-    
+//    string serverResponse = curlHelper.setupCurl(jsonBody, "http://192.168.100.100:11434/api/generate", true); // Almacenamos la respuesta del servidor.
+
     // Limpia CURL globalmente.
     curl_global_cleanup();
 
